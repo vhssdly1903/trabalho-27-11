@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Valor Total</title>
+</head>
+<body>
+
+  <h1>Calculadora de Valor Total</h1>
+
+  <form id="calculadoraForm">
+    <label for="codigoProduto">Código do Produto (1, 2 ou 3):</label>
+    <input type="number" id="codigoProduto" required min="1" max="3">
+
+    <label for="quantidade">Quantidade desejada:</label>
+    <input type="number" id="quantidade" required min="1">
+
+    <button type="button" onclick="calcularValorTotal()">Calcular</button>
+  </form>
+
+  <p id="resultado"></p>
+  <script src = "preco.js"> </script>
+
+</body>
+</html>
